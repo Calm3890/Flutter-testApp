@@ -6,12 +6,13 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   var questions = [
     'what\'s your favorite color',
     'what\'s your favorite animal'
   ];
-
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
